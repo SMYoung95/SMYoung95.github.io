@@ -1,25 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Sebastian M. Young - Game Developer and 3D Artist</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <?php include("header.php"); ?>
-    <main>
-      <section id="hero">
-        <h2>Welcome to my portfolio!</h2>
-        <p>Here you can find some of the games I have worked on, 3D models I have created, and code I have worked on.</p>
-        </section>
-          <a href="games.html">Games</a>
-        
-       <a href="about.html">About Me</a>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian M. Young - Game Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home-header">
+        <h1>Sebastian M. Young</h1>
+        <h2>Game Designer, Developer </h2>
+        <h2>&amp; Jack of All Trades</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sebastianmyoung/" target="_blank"><img src="images/LinkdinLogo.png" alt="Linkedin"></a>
+            <a href="mailto:seanyoungat@hotmail.com" target="_blank"><img src="images/EmailLogo.png" alt="Email"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Games</a>
+                    <ul>
+                        <li><a href="#">Requiem</a></li>
+                        <li><a href="#">Windfall</a></li>
+                        <li><a href="#">I Chase My Cat Sometimes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <img src="images/sebastian_young.jpg" alt="Sebastian M. Young">
+                <h1>Sebastian M. Young</h1>
+                <p>Game Designer, Developer &amp; Jack of All Trades</p>
+                <p>Welcome to my Portfolio! Thank you for checking out my work Below you can view some of the different games I have worked on over the years. For these projects, I have taken the role of Game & Level Designer for the majority of the projects I have worked on. Outside of Game & Level Designer, I have also had responsibilities in 3D Modelling, Animation, Programming, Shader Design, Quality Assurance, Testing, and Evaluation departments. My 3D Models are created in Autodesk Maya, while my projects are primarily in Unity.
+
+                </p>
+            </div>
+        </section>
+        <div class="skills-background">
+            <section id="skills">
+                <div class="container">
+                    <div class="row">
+                        <div class="skill-col">
+                            <div class="skill-img">
+                                <img class="skill-icons" src="images/unity_512.png" alt="Unity">
+                                <p class="skill-names"></p>
+                            </div>
+                        </div>
+                        <div class="skill-col">
+                            <div class="skill-img">
+                                <img class="skill-icons" src="images/unreal_engine_512.png" alt="Unreal Engine">
+                                <p class="skill-names"></p>
+                            </div>
+                        </div>
+                        <div class="skill-col">
+                            <div class="skill-img">
+                                <img class="skill-icons" src="images/photoshop_512.png" alt="Photoshop">
+                                <p class="skill-names"></p>
+                            </div>
+                        </div>
+                        <div class="skill-col">
+                            <div class="skill-img">
+                                <img class="skill-icons" src="images/autodeskmaya_512.png" alt="Autodesk Maya">
+                                <p class="skill-names"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-img">
+                        <div class="project">
+                            <game-h3>Requiem</game-h3>
+                            <img src="images/Games/Requiem/RequiemConceptArtWide.png" alt="Requiem">
+                            <p class="role">Game Director and Lead Game Designer</p>
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                    <div class="col-img">
+                        <div class="project">
+                            <h3>Game Title</h3>
+                            <img src="images/Games/Windfall/WindFallCover.png" alt="Game 2">
+
+                            <p class="role">Lead Game &amp; Level Designer</p>
+                            <p>Released December 2021</p>
+                            <p>Total Production Period 4 weeks</p>
+                        </div>
+                    </div>
+                    <div class="col-img">
+                        <div class="project">
+                            <h3>I Chase My Cat Sometimes</h3>
+                            <img src="images/Games/IChaseMyCatSometimes/IChaseMyCatSometimes.png" alt="Game 3">
+
+                            <p class="role">Lead Game &amp; Level Designer</p>
+                            <p>Released November 2021</p>
+                            <p>Total Production Period: 2 weeks</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
+
     <footer>
-      <p>&copy; Sebastian M. Young 2023</p>
+        <p>&copy; 2023 Sebastian M. Young</p>
     </footer>
-  </body>
+</body>
+
 </html>
 
 
+<script>
+    document.querySelectorAll('nav > ul > li').forEach(function(li) {
+        li.addEventListener('mouseenter', function() {
+            this.classList.add('hover');
+        });
+        li.addEventListener('mouseleave', function() {
+            this.classList.remove('hover');
+        });
+    });
+
+</script>
