@@ -4,7 +4,10 @@
 * {
     box-sizing: border-box;
 }
-
+#main-container {
+  background-color: #312E31; /* Set the background color of the container */
+  margin: 0 1px; /* Set the left and right margins to match your current layout */
+}
 
 /* Basic styling */
 /* Default body margin and padding */
@@ -13,6 +16,7 @@ body {
     max-width: 1028px;
     /* or any other value you prefer */
     padding: 0;
+    padding-top: 10px;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -172,8 +176,7 @@ nav ul ul {
 }
 
 /* Home page */
-.hero {
-    background-image: url('hero.jpg');
+#introduction {
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -181,6 +184,24 @@ nav ul ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.introduction-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #a43c3c;
+    text-shadow: 2px 2px #000;
+    font-weight: bold;
 }
 
 .hero h2 {
@@ -214,7 +235,7 @@ nav ul ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .skill-icons {
@@ -227,7 +248,7 @@ nav ul ul {
 .skill-names {
     display: block;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 0px;
     font-weight: bold;
 }
 
@@ -280,6 +301,41 @@ nav ul ul {
     flex-wrap: wrap
 }
 
+.games-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+    flex: 3;
+}
+
+
+
+.games-col text{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.games-col img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 2rem;
+}
+
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .games-col img {
+    max-width: 100%;
+  }
+
+
 .game {
     margin: 20px;
     text-align: center;
@@ -293,7 +349,7 @@ nav ul ul {
     border-radius: 5px;
 }
 
-.game-h3 {
+.container h3 {
     margin: 10px 0 0 0;
     font-size: 48px;
 }
@@ -327,6 +383,12 @@ nav ul ul {
 .game-details ul li {
     margin-bottom: 10px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Contact page */
 .contact-form {

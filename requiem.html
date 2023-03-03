@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian M. Young - Game Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home-header">
+        <h1>Sebastian M. Young</h1>
+        <h2>Game Designer, Developer </h2>
+        <h2>&amp; Jack of All Trades</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sebastianmyoung/" target="_blank"><img src="images/LinkdinLogo.png" alt="Linkedin"></a>
+            <a href="mailto:seanyoungat@hotmail.com" target="_blank"><img src="images/EmailLogo.png" alt="Email"></a>
+            
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Games</a>
+                    <ul>
+                        <li><a href="requiem.html">Requiem</a></li>
+                        <li><a href="windfall.html">Windfall</a></li>
+                        <li><a href="ichasemycatsometimes.html">I Chase My Cat Sometimes</a></li>
+                    </ul>
+                </li>
+                <li><a href="resume.html">About &amp; Resume</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="games" style="margin-top: 150px;">
+            <div class="container">
+                <hr>
+                <h3>Requiem</h3>
+                <div class="row">
+                    <div class="games-col">
+                        <img src="images/Games/Requiem/RequiemCityConceptArt.png" alt="Requiem">
+                    </div>
+                    <div class="games-col">
+                        <div class="games-text">
+                            <p> For <b>Requiem</b> as the Game Director and Lead Game &amp; Level designer, my tasks include:<br></p>
+                            <ul>
+                                <li>Ensure that the direction of the game follows the team's shared vision.</li>
+                                <li>Responsible for a large part of the planning process</li>
+                                <li>Facilitating meetings between the different departments</li>
+                                <li>Generating a <i>Game Design Document</i> outlining all features in the game</li>
+                                <li>Design game features</li>
+                                <li>Balance game mechanics</li>
+                                <li>Develop prototypes of mechanics</li>
+                            </ul>
+                            <p>The game is set in a dark fantasy world inspired by both Scandinavian and Gothic architecture and mythology. The large capital city of "Requiem" is divided into various sectors, each governed by one of the seven sins presented in the game. The player takes on the role of a lone traveller who is seeking answers about their past and ends up in the city of Requiem. The game begins with the player moving through a snowstorm, seeing the lights of the city getting closer and closer until they reach the front gate. Here, the player is introduced to the horrors of the city by witnessing three corpses hanging from a nearby tree in front of them. </p>
+                        </div>
+                    </div>
+                    <div class="games-text">
+                        <p> The player navigates the city and its various sectors, fighting enemies and uncovering the secrets of their past. The enemies in the game are varied, ranging from human-like enemies to demonic ones, each with unique strengths and weaknesses. The demonic enemies in the game are particularly challenging, requiring the player to use all of their skills and knowledge to defeat them. Throughout the game, the player will encounter NPCs who will provide quests and information about the world and its lore. The player will also discover notes, letters, and other items that will shed light on the backstory of the city and its inhabitants. The game features a deep and complex story with multiple endings, depending on the choices the player makes throughout the game. The game's combat system is a mix of melee combat and ranged combat using various weapons and magical abilities. The player can equip and upgrade weapons, armour, and accessories to improve their combat capabilities. The game's environment and level design are also a key feature of the game, with each sector of the city having its own unique architecture and layout. The player will need to navigate through narrow alleys, climb over walls, and jump across rooftops to reach their objectives. In summary, the game is a dark fantasy action-adventure with elements of RPG and horror. The player takes on the role of a lone traveller in a city ruled by the seven deadly sins, fighting enemies, and uncovering the secrets of their past. The game features a deep and complex story, challenging combat, crafting, and a rich and immersive environment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sebastian M. Young</p>
+    </footer>
+</body>
+
+</html>
+
+
+<script>
+    document.querySelectorAll('nav > ul > li').forEach(function(li) {
+        li.addEventListener('mouseenter', function() {
+            this.classList.add('hover');
+        });
+        li.addEventListener('mouseleave', function() {
+            this.classList.remove('hover');
+        });
+    });
+
+</script>
