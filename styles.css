@@ -58,9 +58,11 @@ header#home-header h1 {
     font-family: Calibri, sans-serif;
     font-size: 48px;
     font-weight: bold;
-    color: #a43c3c;
+    color: #702963;
     /* red color in hex */
     margin-bottom: 0.1em;
+    text-shadow: 0 0 10px #000;
+
 
 }
 
@@ -74,7 +76,7 @@ header#home-header h2 {
 }
 
 hr {
-    border-top: 4px solid #a43c3c;
+    border-top: 4px solid #702963;
     margin: 5px 2;
 }
 
@@ -221,7 +223,7 @@ nav ul ul {
 .skill-col {
     display: inline-block;
     text-align: center;
-    width: 24%;
+    width: 25%;
 }
 
 .skill-icons p {
@@ -243,6 +245,8 @@ nav ul ul {
     align-items: center;
     justify-content: center;
     max-width: 50%;
+    margin-top: 0px;
+    margin-bottom: -15px;
 }
 
 .skill-names {
@@ -326,6 +330,12 @@ nav ul ul {
   margin-right: 2rem;
 }
 
+.games-col-image img {
+  max-width: 45%;
+  height: auto;
+  margin-right: 2rem;
+}
+
  .row {
     display: flex;
     flex-wrap: wrap;
@@ -388,6 +398,26 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.resume-summary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resume-summary-image {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.resume-summary-image img {
+  max-width: 100%;
+}
+
+.resume-summary-text {
+  flex: 1 1 auto;
+}
+
 
 
 /* Contact page */
