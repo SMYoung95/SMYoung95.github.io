@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian M. Young - Game Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home-header">
+        <h1>Sebastian M. Young</h1>
+        <h2>Game Designer, Developer </h2>
+        <h2>&amp; Jack of All Trades</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sebastianmyoung/" target="_blank"><img src="images/LinkdinLogo.png" alt="Linkedin"></a>
+            <a href="mailto:seanyoungat@hotmail.com" target="_blank"><img src="images/EmailLogo.png" alt="Email"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Games</a>
+                    <ul>
+                        <li><a href="requiem.html">Requiem</a></li>
+                        <li><a href="unanouncedrpg.html">Unanounced RPG</a></li>
+                        <li><a href="windfall.html">Windfall</a></li>
+                    </ul>
+                </li>
+                <li><a href="resume.html">About &amp; Resume</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="games" style="margin-top: 150px;">
+            <div class="container">
+                <h1>Contact</h1>
+                <hr>
+                <form action="https://form.jotform.com/230625043522344" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+                <div id="confirmation-message" style="display:none;">
+                    <p>Thank you for reaching out! I will get back to you as soon as possible.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sebastian M. Young</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav > ul > li').forEach(function(li) {
+            li.addEventListener('mouseenter', function() {
+                this.classList.add('hover');
+            });
+            li.addEventListener('mouseleave', function() {
+                this.classList.remove('hover');
+            });
+        });
+
+        // Display confirmation message on form submit
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            form.style.display = 'none';
+            const confirmationMessage = document.querySelector('#confirmation-message');
+            confirmationMessage.style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
