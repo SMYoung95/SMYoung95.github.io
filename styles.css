@@ -475,3 +475,38 @@ button[type="submit"]:hover {
   background-color: #3e8e41;
 }
 
+.model-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.model-image {
+  width: 50%;
+  padding: 20px;
+}
+
+.model-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.model-details {
+  width: 50%;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.model-details h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.model-details p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+

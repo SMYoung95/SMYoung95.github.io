@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian M. Young - Game Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home-header">
+        <h1>Sebastian M. Young</h1>
+        <h2>Game Designer, Developer </h2>
+        <h2>&amp; Jack of All Trades</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sebastianmyoung/" target="_blank"><img src="images/LinkdinLogo.png" alt="Linkedin"></a>
+            <a href="mailto:seanyoungat@hotmail.com" target="_blank"><img src="images/EmailLogo.png" alt="Email"></a>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Games</a>
+                    <ul>
+                        <li><a href="requiem.html">Requiem</a></li>
+                        <li><a href="unanouncedrpg.html">Unanounced RPG</a></li>
+                        <li><a href="windfall.html">Windfall</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Other Projects</a>
+                    <ul>
+                        <li><a href="3dmodels.html">3D Models</a></li>
+                        <li><a href="code.html">Code</a></li>
+                    </ul>
+                </li>
+                <li><a href="resume.html">About &amp; Resume</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="models" style="margin-top: 150px;">
+            <div class="model-container">
+                <div class="model-image">
+                    <img src="images/3DRenders/ScreenShot00002.png" alt="FFTribute">
+                </div>
+                <div class="model-details">
+                    <h3>Cave - Real Time Render in UE5</h3>
+                    <p>Testing of lighting in unreal. Tribute to one of my favourite franchies, Final Fantasy.</p>
+                    <br>
+                    Buster Sword[FF7] and Unnamed Sword[My Design] made in Autodesk Maya.
+                    <br>
+                    Environmental assets from Quixel
+                </div>
+                <div class="model-image">
+                    <img src="images/3DRenders/U5%20-%20MountainRange%20-%20Old.png" alt="MountainRange">
+                </div>
+                <div class="model-details">
+                    <h3>Icy Mountain Range - Real Time Render in UE5</h3>
+                    <p>First testing scene in Unreal. Experimenting with night time lighting settings.</p>
+                    <br>
+                    Environmental assets from Quixel
+                </div>
+                <div class="model-image">
+                    <img src="images/3DRenders/3DRenderBar.png" alt="Bar Render">
+                </div>
+                <div class="model-details">
+                    <h3>Bar Arnold Render</h3>
+                    <p>Arnold Render test in Autodesk Maya.
+                    <br>
+                    Models made in Autodesk Maya.
+                    </p>
+                </div>
+                <div class="model-image">
+                    <img src="images/3DRenders/Watermill.png" alt="Bar Render">
+                </div>
+                <div class="model-details">
+                    <h3>Watermill - Real Time Render in UE5</h3>
+                    <p>Watermill modeled in Autodesk Maya.
+                    <br>
+                    Textured in Substance Painter
+                    </p>
+                </div>
+                <div class="model-image">
+                    <img src="images/3DRenders/IronGate.png" alt="Iron Gate">
+                </div>
+                <div class="model-details">
+                    <h3>Iron Gate - Real Time Render in UE5</h3>
+                    <p>Model made in Autodesk Maya</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sebastian M. Young</p>
+    </footer>
+</body>
+
+</html>
+
+
+<script>
+    document.querySelectorAll('nav > ul > li').forEach(function(li) {
+        li.addEventListener('mouseenter', function() {
+            this.classList.add('hover');
+        });
+        li.addEventListener('mouseleave', function() {
+            this.classList.remove('hover');
+        });
+    });
+
+</script>
