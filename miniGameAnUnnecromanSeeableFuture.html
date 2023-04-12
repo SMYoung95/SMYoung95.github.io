@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian M. Young - Game Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home-header">
+        <h1>Sebastian M. Young</h1>
+        <h2>Game Designer, Developer </h2>
+        <h2>&amp; Jack of All Trades</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sebastianmyoung/" target="_blank"><img src="images/LinkdinLogo.png" alt="Linkedin"></a>
+            <a href="mailto:seanyoungat@hotmail.com" target="_blank"><img src="images/EmailLogo.png" alt="Email"></a>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Games</a>
+                    <ul>
+                        <li><a href="requiem.html">Requiem</a></li>
+                        <li><a href="unanouncedrpg.html">Unannounced RPG</a></li>
+                        <li><a href="windfall.html">Windfall</a></li>
+                        <li><a href="miniGameAnUnnecromanSeeableFuture.html">Gam Jam: An Unnecroman Seeable Future</a></li>
+                        <li><a href="miniGameAnUnpharoSeeableFuture.html">Gam Jam: An Unpharo Seeable Future</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Other Projects</a>
+                    <ul>
+                        <li><a href="3dmodels.html">3D Models</a></li>
+                        <li><a href="https://github.com/SMYoung95?tab=repositories" target="_blank">Code - Github</a></li>
+                    </ul>
+                </li>
+                <li><a href="resume.html">About &amp; Resume</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="games" style="margin-top: 150px;">
+            <div class="container">
+                <hr>
+                <h3>Gam Jam: An Unnecroman Seeable Future (2020)</h3>
+                <div class="row">
+                    <img src="images/Games/AnUnnecroSeeableFuture/Unnecro0.png" alt="An Unnecroman Seeable Future">
+                    <div class="games-col">
+                        <div class="games-text">
+                            <p> For <b>An Unnecroman Seeable Future</b> I took the role of 3D modelling, gameplay design, atmosphere design and animations my tasks include:<br></p>
+                            <ul>
+                                <li>Quickly creating low poly versions of the different 3D models in the game</li>
+                                <li>Animation of the characters</li>
+                                <li>Designing a simple combat system</li>
+                                <li>Set up lighting in the levels</li>
+                            </ul>
+                            <p>
+                                An-Unnecroman-Seeable-Future was a game created over a weekend for one of the the Ludum Dare game jams. <br> 
+                                In this game, you will be tasked with traversing the necromancers dungeon and finding your way out. But beware! The traps are invisible until you set them off! Die from a trap and you will get currency you can spend to buy your way to freedom! Ps. the dungeon is filled with orcs.<br>
+                                In the game you control the skeleton above, and have to navigate around a dangerous environment filled with traps and monsters. The game can be found and played for free <a href="https://defaultv.itch.io/un-necromancy-seeable-future" target="_blank">Here</a>.<br>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="games-col-image">
+                            <img src="images/Games/AnUnnecroSeeableFuture/Unnecro1.png" alt="Windfall">
+                            <img src="images/Games/AnUnnecroSeeableFuture/Unnecro2.png" alt="Windfall">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sebastian M. Young</p>
+    </footer>
+</body>
+
+</html>
+
+
+<script>
+    document.querySelectorAll('nav > ul > li').forEach(function(li) {
+        li.addEventListener('mouseenter', function() {
+            this.classList.add('hover');
+        });
+        li.addEventListener('mouseleave', function() {
+            this.classList.remove('hover');
+        });
+    });
+
+</script>
