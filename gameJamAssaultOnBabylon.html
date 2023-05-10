@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian M. Young - Game Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home-header">
+        <h1>Sebastian M. Young</h1>
+        <h2>Game Designer, Developer </h2>
+        <h2>&amp; Jack of All Trades</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sebastianmyoung/" target="_blank"><img src="images/LinkdinLogo.png" alt="Linkedin"></a>
+            <a href="mailto:seanyoungat@hotmail.com" target="_blank"><img src="images/EmailLogo.png" alt="Email"></a>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Games</a>
+                    <ul>
+                        <li><a href="requiem.html">Requiem</a></li>
+                        <li><a href="unanouncedrpg.html">Unannounced RPG</a></li>
+                        <li><a href="windfall.html">Windfall</a></li>
+                        <li><a href="miniGameAnUnnecromanSeeableFuture.html">Game Jam: An Unnecroman Seeable Future</a></li>
+                        <li><a href="miniGameAnUnpharoSeeableFuture.html">Game Jam: An Unpharo Seeable Future</a></li>
+                        <li><a href="gameJamAssaultOnBabylon.html">Game Jam: Assault on Babylon</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Other Projects</a>
+                    <ul>
+                        <li><a href="3dmodels.html">3D Models</a></li>
+                        <li><a href="https://github.com/SMYoung95?tab=repositories" target="_blank">Code - Github</a></li>
+                    </ul>
+                </li>
+                <li><a href="resume.html">About &amp; Resume</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="games" style="margin-top: 150px;">
+            <div class="container">
+                <hr>
+                <h3>Nordic Game Jam: Assault on Babylon (2023)</h3>
+                <img src="images/Games/AssaulyOnBabylon/AssaultOnBabylon_0.png" alt="Assault On Babylon">
+                <div class="row">
+                    
+                    <div class="games-col">
+                        <div class="games-text">
+                            <p> For <b>Assault on Babylon</b> I took the role of 3D modelling, Level Design, Programmer, lighting and animations. My tasks included:<br></p>
+                            <ul>
+                                <li>Quickly creating low poly versions of the different 3D models in the game</li>
+                                <li>Animation of the characters</li>
+                                <li>Coding a system of health and damage for the enemies</li>
+                                <li>Coding the various damage systems of the modules the player can place</li>
+                                <li>Set up lighting in the levels</li>
+                            </ul>
+                            <p>
+                                The Game was Made from Scratch by Team Tower, a dedicated group of 4 at the Nordic Game Jam 2023.
+                                Assets were created in Maya, coding was done in Unity.
+                                The game was meant to be played on a controller from the start, so your gaming experience will be greater with a ps4 controller, gamepad or anything that uses universal console controls.<br><br>
+                                Fight the Rising Alien Hordes by placing weaponry and defenses on your Tower! Cannons, Laser Guns, Electric Gates and Spike Slabs can be built around your Tower's walls to repel the flying enemies. Your weaponry cannot lock on targets, so it is up to you to rotate your Tower around and ensure your cannons find their mark. You can also rotate your camera view around to get a full view of the situation. Killing aliens earns you currency that you can use to buy more firepower.<br><br>
+
+                                There's total of 5 waves, 4 of which you can play to test the game, and an endless Final Wave at the end. Enjoy wiping the infestation!<br><br>
+
+                                HOW TO PLAY (Controller)<br>
+
+                                [L2] - Counterclockwise Tower Rotation<br>
+                                [R2] - Clockwise Tower Rotation<br>
+                                [Square] - Tower Menu<br>
+                                [X] - Accept/Select<br>
+                                [O] - Back/Exit<br>
+                                [D-pad] or [L3]- Menu Navigation<br>
+                                [R3] - Camera Rotation<br>
+
+                                HOW TO PLAY (PC)<br><br>
+
+                                [Q] - Counterclockwise Tower Rotation<br>
+                                [E] - Clockwise Tower Rotation<br>
+                                [V] - Tower Menu<br>
+                                [Enter] - Accept/Select<br>
+                                [Esc] - Back Exit<br>
+                                [WASD] or (Arrow Keys] - Menu Navigation<br>
+                                [IJKL] - Camera Rotation<br><br>
+
+                                Lead Developer - Rasmus Nielsen<br>
+                                Level Designer/3D Modeler/Programmer - Sebastian Martin Young<br>
+                                Programmer/Editor - Nick Blume<br>
+                                Mechanics Designer/Sound Designer - Alessandro Giandomenico Albarello<br><br>
+
+                                In the game you control the skeleton above, and have to navigate around a dangerous environment filled with traps and monsters. The game can be found and played for free <a href="https://syoung.itch.io/tower-defense-bab" target="_blank">Here</a>.<br>
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sebastian M. Young</p>
+    </footer>
+</body>
+
+</html>
+
+
+<script>
+    document.querySelectorAll('nav > ul > li').forEach(function(li) {
+        li.addEventListener('mouseenter', function() {
+            this.classList.add('hover');
+        });
+        li.addEventListener('mouseleave', function() {
+            this.classList.remove('hover');
+        });
+    });
+
+</script>
